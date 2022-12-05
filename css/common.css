@@ -14,7 +14,7 @@ img {
 }
 
 .container {
-    max-width: 1181px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -24,6 +24,28 @@ img {
 
 /* стилизация header */
 
+.header {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.header__logo {
+    margin-right: 60px;
+}
+
 .header__list-link {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -31,6 +53,7 @@ img {
     font-size: 14px;
     line-height: 19px;
     color: #1E0606;
+    margin-right: 20px;
 
 }
 
@@ -41,4 +64,5 @@ img {
     font-size: 14px;
     line-height: 19px;
     color: #1E0606;
+    margin-left: 23px;
 }
