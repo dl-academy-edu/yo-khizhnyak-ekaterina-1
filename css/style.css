@@ -1,39 +1,39 @@
+/* main */
+
+/* section banner */
+
 .banner {
     background-color: #EEE4DB;
     display: flex;
     flex-wrap: wrap;
     margin-top: 129px;
+    position: relative;
 }
 
-.list {
+.banner__list {
     display: flex;
     flex-direction: column;
     padding-top: 17px;
     padding-left: 28px;
 }
 
-.number {
+.switch {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 60px;
     line-height: 73px;
+    width: 61px;
+    height: 74px;
     color: rgba(30, 6, 6, 0.05);
+    margin-bottom: 10px;
 }
 
-.btn {
-    background: #D6CAC2;
-    border: none;
-    width: 31px;
-    height: 3px;
-    margin-bottom: 11px;
-}
-
-.main {
+.basic {
     display: flex;
     flex-direction: column;
     padding-top: 89px;
-    padding-left: 133px;
+    padding-left: 44px;
 }
 
 .title {
@@ -44,9 +44,10 @@
     line-height: 110%;
     color: #1E0606;
     width: 66%;
+    margin-bottom: 20px;
 }
 
-.discription {
+.subtitle {
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
     font-weight: 400;
@@ -58,7 +59,7 @@
 .button {
     max-width: max-content;
     border: none;
-    margin-top: 20px;
+    margin-bottom: 89px;
 }
 
 .info {
@@ -86,12 +87,191 @@
     width: 100%;
 }
 
-.img {
+.banner__img {
     position: absolute;
-    left: 445px;
+    top: -88px;
     right: 99px;
-    bottom: 39px;
 }
 
+/* section product */
 
+.title-two {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1E0606;
+    width: 100%;
+}
+
+.products {
+    margin-top: 90px;
+}
+
+.categories {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 30px;  
+    gap: 20px;      
+}
+
+   
+.product {
+    display: inline-flex; 
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.categories__link {
+    display: inline-flex;
+}
+
+.modern {
+    display: flex;
+    margin-top: 33px;
+}
+
+.but {
+    background: rgba(112, 187, 220, 0.2);
+    width: 37px;
+    height: 37px;
+    margin-right: 6px;
+}
+
+.modern-text {
+    width: 50%;
+    padding-left: 14px;
+}
+
+/* section business */
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.business {
+    display: flex;
+    margin-top: 90px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-top: 30px;
+}
+
+.delivery-link {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+}
+
+.delivery-link-delivery {
+    padding-top: 17px;
+}
+
+.delivery-link-guarantee {
+    padding-top: 22px;
+}
+
+.delivery-link-credit {
+    padding-top: 22px;
+}
+
+.discciption-work {
+    padding-top: 30px;
+}
+
+.discciption-thank {
+    padding-top: 15px;
+    padding-bottom: 26px;
+}
+
+/* class social */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 91px;
+}
+    
+.social-link {
+    display: inline-flex;
+}
+
+/* section aboutUs */
+
+.aboutUs {
+    display: flex;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    background: #E1F0F7;
+    margin-right: 57px;
+    margin-top: 116px;
+    padding-left: 30px;
+}
+
+.title-two-design {
+    margin-top: -26px;
+    margin-bottom: 10px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    background: #E1F0F7;
+    margin-top: 116px;
+    padding-left: 57px;
+
+}
+
+.title-two-information {
+    margin-top: -26px;
+    margin-bottom: ;
+}
+
+/* footer */
+
+.connect {
+    background: #434343;
+    display: flex;
+    flex-wrap: wrap;    
+    /* font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; */
+}
+
+.connect-navigation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 110p;
+}
+
+.title-navigation {
+    
+}
+
+.connect-information {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+}
 

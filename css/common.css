@@ -22,6 +22,14 @@ img {
     list-style-type: none;
 }
 
+.btn {
+    background: #D6CAC2;
+    border: none;
+    width: 31px;
+    height: 3px;
+    margin-bottom: 11px;
+}
+
 /* стилизация header */
 
 .header {
