@@ -4,67 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="header__link">
-            <img src="./img/icon/Logo.svg" alt="logo" class="header__logo"></a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__list-item"><a href="#" class="header__list-link">BLOG</a></li>
-                <li class="header__list-item"><a href="#" class="header__list-link">CATALOG</a></li>
-                <li class="header__list-item"><a href="#" class="header__list-link">ABOUT US</a></li>
-            </ul>
-            <ul class="header__list header-search">
-                <li class="header__list-item header-search"><a href="#"><img src="./img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
-                <li class="header__list-item header-search"><a href="#">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Contact Us</h1>
-            <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><img src="./img/icon/vector.svg" alt="vector"></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+  <header class="header container">
+    <a href="/" class="header__link">
+      <img src="../img/icon/Logo.svg" alt="logo" class="header__logo"></a>
+    <nav class="header__nav left">
+      <ul class="header__list">
+        <li class="header__list-item undotted"><a href="#" class="header__list-link">BLOG</a></li>
+        <li class="header__list-item undotted"><a href="#" class="header__list-link">CATALOG</a></li>
+        <li class="header__list-item undotted"><a href="#" class="header__list-link">ABOUT US</a></li>
+      </ul>
+    </nav>
+      <ul class="header__list header-search">
+        <li class="header__list-item header-search undotted"><a href="#" class="header__list header-link"><img src="./img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
+        <li class="header__list-item header-search undotted"><a href="./pages/contact.html" class="header__list-search">CONTACT US</a></li>
+      </ul>
+  </header>
+  <main>
+    <section class="contact__box container">
+      <section class="contact">
+        <h1 class="title">CONTACT US</h1>
+        <div class="switch">
+          <ul class="switch__list">
+            <li class="undotted"><a class="switch__link" href="#">Home</a></li>
+            <li class="undotted"><button class="switch__button" type="button"></button></li>
+            <li class="undotted"><a class="switch__link" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <form class="contact__form" method="post" action="#">
+          <div class="label__wrapper">
+            <label class="contact__label" for="name">Name</label>
+            <input class="contact__input-name" type="text" placeholder="Ivan Ivanov" name="name" id="name">
+          </div>
+          <div class="column__two-input">
+            <div class="label__wrapper">
+              <label class="contact__label" for="phone">Phone</label>
+              <input class="contact__input" type="tel" name="phone" id="phone">
             </div>
-            <form method="post" action="#">
-                <div class="label__wrapper">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Ivan Ivanov" name="name" id="name">
-                </div>
-                <div class="column__two-input">
-                    <div class="label__wrapper">
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                    <div class="label__wrapper">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div> 
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" name="consent" id="consent">
-                    <p>By clicking on the button, you consent to the processing of your personal data</p>
-                </div>
-                <button type="submit">submit</button>
-            </form>
-        </section>
-        <section>
-            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-            <p>AN EXPERT IS WAITING TO HELP YOU!</p>
-        </section>
-    </main>
-    <footer>
+            <div class="label__wrapper">
+              <label class="contact__label" for="email">Email</label>
+              <input class="contact__input" type="email" name="email" id="email">
+            </div> 
+          </div>
+          <div>
+            <label class="contact__label" for="message">Message</label>
+            <textarea class="contact__area" name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="consent" id="consent">
+            <p class="text__decorative checkbox__text">By clicking on the button, you consent to the processing of your personal data</p>
+          </div>
+          <button class="caption__info" type="submit">SUBMIT</button>
+        </form>
+      </section>
+      <section class="contact__info">
+        <p class="text__decorative">Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p class="text__decorative">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="contact__info-text">AN EXPERT IS WAITING TO HELP YOU!</p>
+      </section>
+    </section>
+  </main>
+<footer>
         <div>
             <h2>Navigation</h2>
             <ul>
@@ -101,11 +109,11 @@
         <div>
             <fieldset>
                 <legend>Company Rating</legend>
-                <input type="radio" name="rating" id="1">
-                <input type="radio" name="rating" id="2">
-                <input type="radio" name="rating" id="3">
-                <input type="radio" name="rating" id="4">
-                <input type="radio" name="rating" id="5">
+                <input type="radio" name="fail" id="1">
+                <input type="radio" name="satisfactory" id="2">
+                <input type="radio" name="good" id="3">
+                <input type="radio" name="verygood" id="4">
+                <input type="radio" name="excellent" id="5">
             </fieldset>
         </div>
         <p>Copyright © 2018 Dlk • Design Life Kids</p>
