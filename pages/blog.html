@@ -4,85 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Blog</title>
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="header__link">
-            <img src="./img/icon/Logo.svg" alt="logo" class="header__logo"></a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__list-item"><a href="#" class="header__list-link">BLOG</a></li>
-                <li class="header__list-item"><a href="#" class="header__list-link">CATALOG</a></li>
-                <li class="header__list-item"><a href="#" class="header__list-link">ABOUT US</a></li>
-            </ul>
-            <ul class="header__list header-search">
-                <li class="header__list-item header-search"><a href="#" class="header__list header-link"><img src="./img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
-                <li class="header__list-item header-search"><a href="#" class="header__list header-link">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>BLOG</h1>
-            <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><img src="./img/icon/vector.svg" alt="vector"></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <img src="./img/legos.jpg" alt="toys" width="380" height="220">
-                        <p>23rd August 2018</p>
-                        <p>Top 5 fastest growing it service companies in philly</p>
-                        <p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-                    </li>
-                    <li>
-                        <img src="./img/twoToys.jpg" alt="toys" width="380" height="220">
-                        <p>23rd August 2018</p>
-                        <p>Best financial</p>
-                        <p>Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-                    </li>
-                    <li>
-                        <img src="./img/toys.jpg" alt="toys" width="380" height="220">
-                        <p>23rd August 2018</p>
-                        <p>Company logo or brand identity: which one is more important? brand identity</p>
-                        <p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-                    </li>
-                    <li>
-                        <img src="./img/toy.jpg" alt="toys" width="380" height="220">
-                        <p>23rd August 2018</p>
-                        <p>Best financial</p>
-                        <p>Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-                    </li>
-                    <li>
-                        <img src="./img/doll.jpg" alt="toys" width="380" height="220">
-                        <p>23rd August 2018</p>
-                        <p>Company logo or brand identity: which one is more important? brand identity</p>
-                        <p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-                    </li>
-                    <li>
-                        <img src="./img/dice.jpg" alt="toys" width="380" height="220">
-                        <p>23rd August 2018</p>
-                        <p>Top 5 fastest growing it service companies in philly</p>
-                        <p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><button type="button"></button></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><button type="button"></button></li>
-                </ul>
-            </div>
-        </section>
+  <header class="header container">
+    <a href="/" class="header__link">
+      <img src="../img/icon/Logo.svg" alt="logo" class="header__logo"></a>
+    <nav class="header__nav left">
+      <ul class="header__list">
+        <li class="header__list-item undotted"><a href="#" class="header__list-link">BLOG</a></li>
+        <li class="header__list-item undotted"><a href="#" class="header__list-link">CATALOG</a></li>
+        <li class="header__list-item undotted"><a href="#" class="header__list-link">ABOUT US</a></li>
+      </ul>
+    </nav>
+      <ul class="header__list header-search">
+        <li class="header__list-item header-search undotted"><a href="#" class="header__list header-link"><img src="../img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
+        <li class="header__list-item header-search undotted"><a href="../img/icon/search.svg" class="header__list-search">CONTACT US</a></li>
+      </ul>
+  </header>
+  <main>
+    <section class="blog container">
+      <h1 class="title">BLOG</h1>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="#">Home</a></li>
+          <li class="breadcrumbs__list-item undotted"><button class="breadcrumbs__button"></button></li>
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="articles">
+        <ul class="articles__list">
+          <li class="articles__list-item">
+            <img src="../img/legos.jpg" alt="toys" width="380" height="220">
+            <p class="date">23rd August 2018</p>
+            <a class="article__title" href="">Top 5 fastest growing it service companies in philly</a>
+            <p class="article__text" >Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+          </li>
+          <li class="articles__list-item">
+            <img src="../img/twoToys.jpg" alt="toys" width="380" height="220">
+            <p class="date">23rd August 2018</p>
+            <a class="article__title" href="">Best financial</a>
+            <p class="article__text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+          </li>
+          <li class="articles__list-item">
+            <img src="../img/toys.jpg" alt="toys" width="380" height="220">
+            <p class="date">23rd August 2018</p>
+            <a class="article__title" href="">Company logo or brand identity: which one is more important? brand identity</a>
+            <p class="article__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+          </li>
+          <li class="articles__list-item">
+            <img src="../img/toy.jpg" alt="toys" width="380" height="220">
+            <p class="date">23rd August 2018</p>
+            <a class="article__title" href="">Best financial</a>
+            <p class="article__text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+          </li>
+          <li class="articles__list-item">
+            <img src="../img/doll.jpg" alt="toys" width="380" height="220">
+            <p class="date">23rd August 2018</p>
+            <a class="article__title" href="">Company logo or brand identity: which one is more important? brand identity</a>
+            <p class="article__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+          </li>
+          <li class="articles__list-item">
+            <img src="../img/dice.jpg" alt="toys" width="380" height="220">
+            <p class="date">23rd August 2018</p>
+            <a class="article__title" href="">Top 5 fastest growing it service companies in philly</a>
+            <p class="article__text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li><button class="pagination__button-left" type="button"></button></li>
+          <li><a class="pagination__number undotted" href="#">1</a></li>
+          <li><a class="pagination__number undotted" href="#">2</a></li>
+          <li><a class="pagination__number undotted" href="#">3</a></li>
+          <li><a class="pagination__number undotted" href="#">4</a></li>
+          <li><button class="pagination__button-right" type="button"></button></li>
+        </ul>
+      </div>
+      </section>
     </main>
     <footer>
         <div>
@@ -123,11 +129,11 @@
         <div>
             <fieldset>
                 <legend>Company Rating</legend> 
-                <input type="radio" name="rating" id="1">
-                <input type="radio" name="rating" id="2">
-                <input type="radio" name="rating" id="3">
-                <input type="radio" name="rating" id="4">
-                <input type="radio" name="rating" id="5">
+                <input type="radio" name="fail" id="1">
+                <input type="radio" name="satisfactory" id="2">
+                <input type="radio" name="good" id="3">
+                <input type="radio" name="verygood" id="4">
+                <input type="radio" name="excellent" id="5">
             </fieldset>
         </div>
         <p>Copyright © 2018 Dlk • Design Life Kids</p>
