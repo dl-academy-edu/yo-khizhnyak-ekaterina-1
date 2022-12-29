@@ -1,8 +1,10 @@
 const popup = document.querySelector('.popup');
-const btn = document.querySelector('.btn__js');
+const btn = document.querySelector('.btn_js');
 const closePopup = document.querySelector('.close');
 const input = document.querySelector('.contact__input-name');
 const overlay = document.querySelector('.overlay');
+const checkboxInput = document.querySelector('.checkbox__input');
+const submit = document.querySelector('.submit');
 console.log(closePopup)
 
 
@@ -18,3 +20,10 @@ closePopup.addEventListener('click', function () {
 overlay.addEventListener('click', function() {
     popup.classList.remove('open');
 })
+
+checkboxInput.addEventListener('change', function() {
+    if(!checkboxInput.hasAttribute('checked')) {
+        submit.setAttribute("disabled", "disabled");        
+    }
+})
+

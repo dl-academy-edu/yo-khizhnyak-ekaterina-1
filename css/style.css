@@ -40,6 +40,19 @@
     border: none;
     width: 31px;
     height: 3px;
+    cursor: pointer;
+}
+
+.switch__list-btn:hover {
+    background: #725F5B;
+}
+
+.switch__list-btn:active {
+    background: #725F5B;
+}
+
+.active {
+    background-color: rgba(30, 6, 6, 0.6);
 }
 
 .caption {
@@ -47,6 +60,7 @@
     flex-direction: column;
     padding-top: 89px;
     padding-left: 44px;
+    padding-bottom: 89px;
 }
 
 .caption-title {
@@ -56,16 +70,27 @@
     margin: 0;
 }
 
+.subtitle {
+    font-family: 'Crimson Text', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .banner__text {
     background-color: #C29974;
-    padding: 11px 364px;
-    font-family: 'Open Sans', sant-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 40px;
     color: #FFFFFF;
-    margin-top: 98px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .banner__img {
@@ -127,6 +152,10 @@
     color: #FFFFFF;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
+
+.products__link:hover, .products__link:active {
+    text-decoration: underline;
+}
    
 .products__link-apparel {
     position: absolute;
@@ -164,6 +193,7 @@
     width: 37px;
     height: 37px;
     margin-top: 33px;
+    cursor: pointer;
 }
 
 .butt-left {
@@ -197,19 +227,20 @@
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
-    padding-bottom: 17px;
+    padding-left: 61px;
 }
 
 .delivery {
     display: flex;
     flex-direction: column;
-    padding-left: 121px;
+    padding-left: 60px;
     padding-top: 30px;
     padding-right: 100px;
 }
 
 .delivery__list {
-    padding-bottom: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;    
 }
 
 .delivery__link {
@@ -219,16 +250,35 @@
     font-size: 26px;
     line-height: 34px;
     color: #1E0606;
+    padding-right: 180px;
+    padding-left: 60px;
+}
+
+.item-active, .delivery__list:hover {
+    background-color: rgba(112, 187, 220, 0.2);
+    max-width: 326px;
+}
+
+.link-active, .delivery__link:hover {
+    font-weight: 700;
 }
 
 .delivery__work {
-    padding-top: 8px;
+    padding-top: 30px;
+    padding-left: 60px;
 }
 
 .delivery__thank {
     padding-top: 15px;
     padding-bottom: 26px;
+    padding-left: 60px;
+   
 }
+
+.delivery-btn {
+    margin-left: 60px;
+}
+
 
 /* section social */
 
@@ -275,7 +325,7 @@
 }
 
 .design__text {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contacts {
@@ -303,16 +353,14 @@
 
 .footer {
     display: flex;
-    min-height: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    background-color: #434343;
 }
 
 .footer__box {
-    background-color: #434343;
-    padding: 100px 110px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .navigation__list {
@@ -328,6 +376,14 @@
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+}
+
+.footer__link:hover {
+    opacity: 0.5;
+}
+
+.footer__link:active {
+    opacity: 0.2;
 }
 
 .link__name {
@@ -377,6 +433,11 @@
     background-color: #666666;
 }
 
+.connect__email:hover, 
+.connect__email:active {
+    border: 1px solid #FFFDFD;
+}
+
 .connect__email::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -407,6 +468,14 @@
     background-color: #666666;
 }
 
+.media-icons__link:hover {
+    opacity: 0.5;
+}
+
+.media-icons__link:active {
+    opacity: 0.2;
+}
+
 .free-box {
     display: flex;
     border-top: 1px solid #666666;
@@ -420,7 +489,7 @@
 }
 
 .rating__caption {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -429,7 +498,7 @@
 }
 
 .rating__caption-web {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -438,14 +507,20 @@
     padding-left: 109px;
 }
 
+.rating__caption-web:hover, 
+.rating__caption-web:active {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
 .rating__group {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     margin-right: 154px;
     margin-left: 25px;
-    width: 97px;
+    /* width: 97px; */
     height: 16px;
     gap: 3px;
 }
@@ -465,9 +540,54 @@
     height: 13px;
     margin-left: 3px;
     margin-top: 5px;
+    padding-right: 14px;
 }
 
-/* стилизация popup */
+.rating__group >.rating__star:checked,
+.rating__group >.rating__star:checked ~ .label-rating {
+    background-image: url('../img/icon/star-checked.svg');
+}
+
+.rating__group:hover >.rating__star:hover,
+.rating__group:hover >.rating__star:hover ~ .label-rating {
+    background-image: url('../img/icon/star-hover.svg');
+}
+ /* .rating__group:hover {
+    background-image: url('../img/icon/star-hover.svg');
+ } */
+
+
+
+/* .rating__star:checked,
+.rating__star:checked ~ .label-rating {
+    background-image: url('../img/icon/star-checked.svg');
+}
+
+.rating__star:hover,
+.rating__star:hover ~ .label-rating {
+    background-image: url('../img/icon/star-hover.svg');
+} */
+
+
+
+
+
+
+
+
+/* стилизация popup*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 30%;
+    z-index: 3;
+}
 
 .overlay {
     position: fixed;
@@ -475,25 +595,27 @@
     bottom: 0;
     right: 0;
     left: 0;
-    display: flex;
     z-index: 1;
     background-color: rgba(125, 151, 218, 0.8);
     padding: 7% 30%;
+    max-width: 100%;
+    min-height: 30%;
 }
 
 .open {
-    display: block;
-    z-index: 3;
+    display: flex;
 }
 
 .modal__wrap {
     display: flex;
     flex-direction: row;
-    z-index: 2;
+    margin-left: 32%;
+    margin: 7% 28%;
+    z-index: 100;
 }
 
 .close {
-    background-image: url('../img/icon/close.png');
+    background-image: url('../img/icon/close.svg');
     background-color: rgba(125, 151, 218, 0.8);
     background-repeat: no-repeat;
     background-position: center;
@@ -502,6 +624,7 @@
     width: 15px;
     height: 15px;
     margin-left: 10px;
+    margin-top: 0px;
 }
 
 

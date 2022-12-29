@@ -19,6 +19,10 @@
 
 /* стилизация form */
 
+.title__contact {
+    word-spacing: 16px;
+}
+
 .contact__form {
     max-width: 680px;
     background-color: #E5EAF8;
@@ -76,11 +80,14 @@
     width: 100%;
     height: 150px;
     resize: none;
+    margin-top: 5px;
 }
 
 .checkbox {
     display: flex;
     position: relative;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .checkbox__input {
@@ -90,20 +97,53 @@
 }
 
 .checkbox__text {
-    margin-left: 33px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
-    margin-top: 22px;
-    margin-bottom: 17px;
+    line-height: 16px;
+    color: #1E0606;
+    margin-left: 35px;
 }
 
 .checkbox__text::before {
     position: absolute;
-    content: url(../img/icon/square.png);
+    content: "";
+    background-image: url('../img/icon/square.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     cursor: pointer;
-    width: 14px;
-    height: 14px;
-    margin-left: -31px;
+    width: 19px;
+    height: 19px;
+    margin-left: -35px;
+}
+
+.checkbox__input:checked +.checkbox__text::before{
+    background-image: url('../img/icon/contact-checked.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    background-position-y: top;
+    width: 19px;
+    height: 19px;
+    background-color: #E5EAF8;
+}
+
+.checkbox__text:hover,
+.checkbox__text:active {
+    text-decoration: underline;
+}
+
+.checkbox__input:disabled + .checkbox__text::before {
+    content: "";
+    background-image: url("../img/icon/square-disabled.svg");
+
+}
+
+.checkbox__input:disabled + .checkbox__text {
+    color: #908484;
+    text-decoration: none;
 }
 
 .contact__box {
@@ -128,3 +168,11 @@
     color: #C29974;
 }
 
+.input-change:hover,
+.input-change:active {
+    border: 1px solid #C29974;
+}
+
+.input-change:disabled {
+    border: 1px solid #EBEBEB;
+}

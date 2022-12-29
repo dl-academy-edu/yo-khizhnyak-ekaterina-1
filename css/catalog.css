@@ -29,6 +29,14 @@
   height: 270px;
 }
 
+.products-hidden-1 {
+  min-width: 205px;
+}
+
+.products-hidden-2 {
+  min-width: 180px;
+}
+
 .product__apparel {
   background-image: url(../img/categoryOne.jpeg);  
   background-color: #DBE4DB; 
@@ -47,7 +55,6 @@
 .product__accessories{
   background-image: url(../img/categoryFour.png);
   background-color: #D5D4E1;
-  margin-left: 200px;
 }
 
 .product__sale {
@@ -70,6 +77,10 @@
   text-transform: uppercase;
   color: #FFFFFF;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.product__link:hover, .product__link:active {
+  text-decoration: underline;
 }
 
 .product__link-apparel {

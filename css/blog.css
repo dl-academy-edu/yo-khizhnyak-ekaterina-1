@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 
+.articles {
+    margin-bottom: 47px;
+}
+
 .articles__list {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +46,10 @@
     color: #1E0606;
     margin-top: 7px;
 }    
+
+.article__title:hover, .article__title:active {
+    text-decoration: underline;
+}
 
 .article__text {
     font-family: 'Open Sans', sans-serif;
