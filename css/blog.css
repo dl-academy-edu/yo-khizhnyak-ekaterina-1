@@ -1,7 +1,12 @@
 /* стилизация main */
 
+.link-blog {
+    padding-left: 5px;
+}
+
 .blog {
     margin-top: 60px;
+    margin-bottom: 55px;
 }
 
 .title {

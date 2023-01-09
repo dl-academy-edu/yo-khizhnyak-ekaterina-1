@@ -13,198 +13,211 @@
     <title>Toys</title>
 </head>
 <body>
-    <header class="header container">
-        <a href="/" class="header__link header-change">
-          <img src="../img/icon/Logo.svg" alt="logo" class="header__logo"></a>
-        <nav class="header__nav left">
-          <ul class="header__list">
-            <li class="header__list-item undotted header-change"><a href="../pages/blog.html" class="header__list-link">BLOG</a></li>
-            <li class="header__list-item undotted header-change"><a href="../pages/catalog.html" class="header__list-link">CATALOG</a></li>
-            <li class="header__list-item undotted header-change"><a href="#" class="header__list-link">ABOUT US</a></li>
-          </ul>
-        </nav>
-        <ul class="header__list header-search">
-          <li class="header__list-item header-search undotted header-change"><a href="#" class="header__list header-link"><img src="../img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
-          <li class="header__list-item header-search undotted header-change"><a href="../pages/contact.html" class="header__list-search">CONTACT US</a></li>
+  <header class="header container">
+    <a href="/" class="header__link header-change">
+      <img src="../img/icon/Logo.svg" alt="logo" class="header__logo"></a>
+    <nav class="header__nav left">
+      <ul class="header__list">
+        <li class="header__list-item undotted header-change"><a href="../pages/blog.html" class="header__list-link">BLOG</a></li>
+        <li class="header__list-item undotted header-change"><a href="../pages/catalog.html" class="header__list-link">CATALOG</a></li>
+        <li class="header__list-item undotted header-change"><a href="#" class="header__list-link">ABOUT US</a></li>
+       </ul>
+    </nav>
+    <ul class="header__list header-search">
+      <li class="header__list-item header-search undotted header-change"><a href="#" class="header__list header-link"><img src="../img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
+      <li class="header__list-item header-search undotted header-change"><a href="../pages/contact.html" class="header__list-search">CONTACT US</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="toys container">
+      <h1 class="title toys__title">TOY FOR KIDS</h1>
+      <div class="breadcrumbs">   
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="../index.html">Home</a></li>
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="../pages/catalog.html">Catalog</a></li>
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="../pages/toys.html">Toys</a></li>
         </ul>
-    </header>
-    <main>
-        <section class="toys container">
-            <h1 class="title toys__title">TOY FOR KIDS</h1>
-            <div class="breadcrumbs">   
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="../index.html">Home</a></li>
-                    <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="../pages/catalog.html">Catalog</a></li>
-                    <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="../pages/toys.html">Toys</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="filter">
-            <div class="filter__cost">
-                <p class="filter__name">Cost</p>
-                <input class="cost__input" type="range" min="0" max="500" value="100">
-                <span class="filter-text cost__value">0 500</span>  
-            </div>
-            <div class="filter__color">
-                <p class="filter__name">Color</p>
-                <ul class="filter__color-list">
-                    <li>
-                        <input class="color__input" type="checkbox" name="color" id="black">
-                        <label class="color__label filter-text" for="black">Black</label>
-                    </li>
-                    <li>
-                        <input class="color__input" type="checkbox" name="color" id="blue">
-                        <label class="color__label filter-text" for="blue">Blue</label>
-                    </li>
-                    <li>
-                        <input class="color__input" type="checkbox" name="color" id="green">
-                        <label class="color__label filter-text" for="green">Green</label>
-                    </li>
-                    <li>
-                        <input class="color__input" type="checkbox" name="color" id="white">
-                        <label class="color__label filter-text" for="white">White</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="filter__delivery">
-                <p class="filter__name delivery-name">Delivery</p>
-                <ul class="filter__delivery__list">
-                    <li class="filter__list-item">
-                        <input class="delivery__input" type="radio" name="delivery" id="free" checked>
-                        <label class="delivery__choise filter-text" for="free">Free shipping</label>
-                    </li>
-                    <li class="filter-list-item">
-                        <input class="delivery__input" type="radio" name="delivery" id="fast">
-                        <label class="delivery__choise filter-text" for="fast">Fast shipping</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="filter__amount">
-                <p class="filter__name">Amount</p>
-                <ul class="filter__amount-list">
-                    <li>
-                        <input class="amount__input" type="radio" name="amount" id="0-5" value="0-5" checked>
-                        <label class="amount__value amount__value-mini filter-text" for="0-5">0-5</label>
-                    </li>
-                    <li>
-                        <input class="amount__input" type="radio" name="amount" id="10-20" value="10-20">
-                        <label class="amount__value filter-text" for="10-20">10-20</label>
-                    </li>
-                    <li>
-                        <input class="amount__input" type="radio" name="amount" id="20-50" value="20-50">
-                        <label class="amount__value filter-text" for="20-50">20-50</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="submit">
-                <button class="caption__info" type="submit">APPLY</button>
-            </div>
-        </section>
-        <section class="toys__catalog container" >
-             <ul class="toys__catalog-list">
-                <li class="toys__link">
-                    <a class="toys__link-item" href="">learn more</a>
-                    <img src="../img/sharky.png" alt="sharky" width="380" height="385">
-                    <p class="toys-list-name">SHARKY BEAN BAG CHAIR COVER</p>
-                    <p class="toys-cost">$60.00 USD</p>
-                </li>
-                <li class="toys__link">
-                    <a class="toys__link-item" href="">learn more</a>
-                    <img src="../img/frames.png" alt="frames" width="380" height="385">
-                    <p class="toys-list-name">BRASS DECO FRAMES</p>
-                    <p class="toys-cost">$66.00 USD</p>
-                </li>
-                <li class="toys__link">
-                    <a class="toys__link-item" href="">learn more</a>
-                    <img src="../img/apron.png" alt="apron" width="380" height="385">
-                    <p class="toys-list-name">CIBO FULL APRON</p>
-                    <p class="toys-cost">$60.00 USD</p>
-                </li>
-                <li class="toys__link">
-                    <a class="toys__link-item" href="">learn more</a>
-                    <img src="../img/gumball-machine.png" alt="gumball machine" width="380" height="385">
-                    <p class="toys-list-name">GATCHA GATCHA GUMBALL MACHINE</p>
-                    <p class="toys-cost">$56.00 USD</p>
-                </li>
-                <li class="toys__link">
-                    <a class="toys__link-item" href="">learn more</a>
-                    <img src="../img/scented-candle.png" alt="scented candle" width="380" height="385">
-                    <p class="toys-list-name">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                    <p class="toys-cost">$29.00 USD</p>
-                </li>
-                <li class="toys__link">
-                    <a class="toys__link-item" href="">learn more</a>
-                    <img src="../img/tea-light.png" alt="tea light" width="380" height="382">
-                    <p class="toys-list-name">TANGLE SPINNING TEA LIGHT</p>
-                    <p class="toys-cost">$56.00 USD</p>
-                </li>
-            </ul>
-            <div class="pagination">
-                <a href=""><svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
-                    </svg></a>
-                  <div>
-                    <ul class="pagination__list">
-                      <li><a class="pagination__number undotted number-active" href="#">1</a></li>
-                      <li><a class="pagination__number undotted" href="#">2</a></li>
-                      <li><a class="pagination__number undotted" href="#">3</a></li>
-                      <li><a class="pagination__number undotted" href="#">4</a></li>
-                    </ul>                      
-                  </div>
-                <a href=""><svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
-                    </svg></a>
-            </div>
+      </div>
     </section>
-    </main>
-    <footer>
-        <div>
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
-            </ul>
+    <section class="filter">
+      <div class="filter__cost">
+        <p class="filter__name">Cost</p>
+        <input class="cost__input" type="range" min="0" max="500" value="100">
+        <span class="filter-text cost__value">0 500</span>  
+      </div>
+      <div class="filter__color">
+        <p class="filter__name">Color</p>
+        <ul class="filter__color-list">
+          <li>
+            <input class="color__input" type="checkbox" name="color" id="black">
+            <label class="color__label filter-text" for="black">Black</label>
+          </li>
+          <li>
+            <input class="color__input" type="checkbox" name="color" id="blue">
+            <label class="color__label filter-text" for="blue">Blue</label>
+          </li>
+          <li>
+            <input class="color__input" type="checkbox" name="color" id="green">
+            <label class="color__label filter-text" for="green">Green</label>
+          </li>
+          <li>
+            <input class="color__input" type="checkbox" name="color" id="white">
+            <label class="color__label filter-text" for="white">White</label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__delivery">
+        <p class="filter__name delivery-name">Delivery</p>
+        <ul class="filter__delivery__list">
+          <li class="filter__list-item">
+            <input class="delivery__input" type="radio" name="delivery" id="free" checked>
+            <label class="delivery__choise filter-text" for="free">Free shipping</label>
+          </li>
+          <li class="filter-list-item">
+            <input class="delivery__input" type="radio" name="delivery" id="fast">
+            <label class="delivery__choise filter-text" for="fast">Fast shipping</label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__amount">
+        <p class="filter__name">Amount</p>
+        <ul class="filter__amount-list">
+          <li>
+            <input class="amount__input" type="radio" name="amount" id="0-5" value="0-5" checked>
+            <label class="amount__value amount__value-mini filter-text" for="0-5">0-5</label>
+          </li>
+          <li>
+            <input class="amount__input" type="radio" name="amount" id="10-20" value="10-20">
+            <label class="amount__value filter-text" for="10-20">10-20</label>
+          </li>
+          <li>
+            <input class="amount__input" type="radio" name="amount" id="20-50" value="20-50">
+            <label class="amount__value filter-text" for="20-50">20-50</label>
+          </li>
+        </ul>
+      </div>
+      <div class="submit">
+        <button class="caption__info" type="submit">APPLY</button>
+      </div>
+    </section>
+      <section class="toys__catalog container" >
+        <ul class="toys__catalog-list">
+          <li class="toys__link">
+            <a class="toys__link-item" href="">learn more</a>
+            <img src="../img/sharky.png" alt="sharky" width="380" height="385">
+            <p class="toys-list-name">SHARKY BEAN BAG CHAIR COVER</p>
+            <p class="toys-cost">$60.00 USD</p>
+          </li>
+          <li class="toys__link">
+            <a class="toys__link-item" href="">learn more</a>
+            <img src="../img/frames.png" alt="frames" width="380" height="385">
+            <p class="toys-list-name">BRASS DECO FRAMES</p>
+            <p class="toys-cost">$66.00 USD</p>
+           </li>
+          <li class="toys__link">
+            <a class="toys__link-item" href="">learn more</a>
+            <img src="../img/apron.png" alt="apron" width="380" height="385">
+            <p class="toys-list-name">CIBO FULL APRON</p>
+            <p class="toys-cost">$60.00 USD</p>
+          </li>
+          <li class="toys__link">
+            <a class="toys__link-item" href="">learn more</a>
+            <img src="../img/gumball-machine.png" alt="gumball machine" width="380" height="385">
+            <p class="toys-list-name">GATCHA GATCHA GUMBALL MACHINE</p>
+            <p class="toys-cost">$56.00 USD</p>
+          </li>
+          <li class="toys__link">
+            <a class="toys__link-item" href="">learn more</a>
+            <img src="../img/scented-candle.png" alt="scented candle" width="380" height="385">
+            <p class="toys-list-name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+            <p class="toys-cost">$29.00 USD</p>
+          </li>
+          <li class="toys__link">
+            <a class="toys__link-item" href="">learn more</a>
+            <img src="../img/tea-light.png" alt="tea light" width="380" height="385">
+            <p class="toys-list-name">TANGLE SPINNING TEA LIGHT</p>
+            <p class="toys-cost">$56.00 USD</p>
+          </li>
+        </ul>
+        <div class="pagination">
+          <a href="">
+            <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+            </svg></a>
+          <div>
+            <ul class="pagination__list">
+              <li><a class="pagination__number undotted number-active" href="#">1</a></li>
+              <li><a class="pagination__number undotted" href="#">2</a></li>
+              <li><a class="pagination__number undotted" href="#">3</a></li>
+              <li><a class="pagination__number undotted" href="#">4</a></li>
+            </ul>                      
+          </div>
+          <a href="">
+            <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+            </svg></a>
         </div>
-        <div>
-            <h2>Customer Information</h2>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
-            </ul>
+      </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__box container">
+      <div class="footer__navigation">
+        <h2 class="link__name">Navigation</h2>
+          <ul class="navigation__list">
+            <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">About Us</a></li>
+            <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="../pages/blog.html">Blog</a></li>
+            <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Design Services</a></li>
+            <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Featured On</a></li>
+            <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">2018 Holiday Catalog</a></li>
+            <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Shop By Designer</a></li>
+          </ul>
+      </div>
+      <div class="footer__information">
+        <h2 class="link__name information__name">Customer Information</h2>
+        <ul class="information__list">
+          <li class="undotted"><a class="footer__link" href="../pages/contact.html">Contact Us</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Sale Exclusions</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Shipping & Returns</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Terms & Conditions</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Privacy Policy</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Search</a></li>
+        </ul>
+      </div>
+      <div class="footer__connect">
+        <h2 class="link__name connect__name">Connect</h2>
+        <div class="connect__wrapper">
+          <input class="connect__email" type="text" name="text" placeholder="Email">
+          <button class="caption__info" type="button">JOIN</button>
         </div>
-        <div>
-            <h2>Connect</h2>
-            <input type="text" name="text" placeholder="Email">
-            <button type="button">join</button>
-            <div>
-                <ul>
-                    <li><a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="./img/icon/pinterest.svg" alt="pinterest"></a></li>
-                    <li><a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a></li>
-                </ul>   
-            </div>
+        <div class="media-icons">
+          <ul class="media-icons__list">
+            <li class="undotted"><a class="media-icons__link" href="https://www.facebook.com"><img class="media-icons__img" src="../img/icon/facebook.svg" alt="facebook"></a></li>
+            <li class="undotted"><a class="media-icons__link" href="https://www.twitterinc.com"><img class="media-icons__img" src="../img/icon/twitter.svg" alt="twitter"></a></li>
+            <li class="undotted"><a class="media-icons__link" href="https://ru.pinterest.com"><img class="media-icons__img" src="../img/icon/pinterest.svg" alt="pinterest"></a></li>
+            <li class="undotted"><a class="media-icons__link" href="https://www.instagram.com"><img class="media-icons__img" src="../img/icon/instagram.svg" alt="instagram"></a></li>
+          </ul>   
         </div>
-        <div>
-            <fieldset>
-                <legend>Company Rating</legend> 
-                <input type="radio" name="fail" id="1">
-                <input type="radio" name="satisfactory" id="2">
-                <input type="radio" name="good" id="3">
-                <input type="radio" name="verygood" id="4">
-                <input type="radio" name="excellent" id="5">
-            </fieldset>
+      </div>
+      <div class="free-box">
+        <div class="rating">
+          <div class="rating__group rating__caption rating__title">
+            <input class="rating__star" type="radio" name="fail" id="5">
+            <label class="label-rating" for="5"></label>
+            <input class="rating__star" type="radio" name="satisfactory" id="4">
+            <label class="label-rating" for="4"></label>
+            <input class="rating__star" type="radio" name="good" id="3">
+            <label class="label-rating" for="3"></label>
+            <input class="rating__star" type="radio" name="verygood" id="2">
+            <label class="label-rating" for="2"></label>
+            <input class="rating__star" type="radio" name="excellent" id="1">
+            <label class="label-rating rating-5" for="1"></label>
+            Company Rating
+          </div>  
         </div>
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <p>Web Design — Direct Line Development</p>
-    </footer>   
+        <p class="rating__caption">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a class="rating__caption rating__caption-web" href="#">Web Design — Direct Line Development</a>
+      </div>
+    </div>
+  </footer>  
 </body>
 </html>

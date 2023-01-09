@@ -34,7 +34,7 @@
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="#">Home</a></li>
-          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="#">Blog</a></li>
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link link-blog" href="#">Blog</a></li>
         </ul>
       </div>
       <div class="articles">
@@ -78,71 +78,84 @@
         </ul>
       </div>
       <div class="pagination">
-        <a href=""><svg class="pagination__vector" width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="">
+          <svg class="pagination__vector" width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
-            </svg></a>
-          <div>
-            <ul class="pagination__list">
-              <li><a class="pagination__number undotted number-active" href="#">1</a></li>
-              <li><a class="pagination__number undotted" href="#">2</a></li>
-              <li><a class="pagination__number undotted" href="#">3</a></li>
-              <li><a class="pagination__number undotted" href="#">4</a></li>
-            </ul>                      
-          </div>
-        <a href=""><svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          </svg></a>
+        <div>
+          <ul class="pagination__list">
+            <li><a class="pagination__number undotted number-active" href="#">1</a></li>
+            <li><a class="pagination__number undotted" href="#">2</a></li>
+            <li><a class="pagination__number undotted" href="#">3</a></li>
+            <li><a class="pagination__number undotted" href="#">4</a></li>
+          </ul>                      
+        </div>
+        <a href="">
+          <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
-            </svg></a>
+          </svg></a>
       </div>
-      </section>
-    </main>
-    <footer>
-        <div>
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
-            </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__box container">
+      <div class="footer__navigation">
+        <h2 class="link__name">Navigation</h2>
+        <ul class="navigation__list">
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">About Us</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="../pages/blog.html">Blog</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Design Services</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Featured On</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">2018 Holiday Catalog</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Shop By Designer</a></li>
+        </ul>
+      </div>
+      <div class="footer__information">
+        <h2 class="link__name information__name">Customer Information</h2>
+        <ul class="information__list">
+          <li class="undotted"><a class="footer__link" href="../pages/contact.html">Contact Us</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Sale Exclusions</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Shipping & Returns</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Terms & Conditions</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Privacy Policy</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Search</a></li>
+        </ul>
+      </div>
+      <div class="footer__connect">
+        <h2 class="link__name connect__name">Connect</h2>
+        <div class="connect__wrapper">
+          <input class="connect__email" type="text" name="text" placeholder="Email">
+          <button class="caption__info" type="button">JOIN</button>
         </div>
-        <div>
-            <h2>Customer Information</h2>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
-            </ul>
+        <div class="media-icons">
+          <ul class="media-icons__list">
+            <li class="undotted"><a class="media-icons__link" href="https://www.facebook.com"><img class="media-icons__img" src="../img/icon/facebook.svg" alt="facebook"></a></li>
+            <li class="undotted"><a class="media-icons__link" href="https://www.twitterinc.com"><img class="media-icons__img" src="../img/icon/twitter.svg" alt="twitter"></a></li>
+            <li class="undotted"><a class="media-icons__link" href="https://ru.pinterest.com"><img class="media-icons__img" src="../img/icon/pinterest.svg" alt="pinterest"></a></li>
+            <li class="undotted"><a class="media-icons__link" href="https://www.instagram.com"><img class="media-icons__img" src="../img/icon/instagram.svg" alt="instagram"></a></li>
+          </ul>   
         </div>
-        <div>
-            <h2>Connect</h2>
-            <input type="text" name="text" placeholder="Email">
-            <button type="button">join</button>
-            <div>
-                <ul>
-                    <li><a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="./img/icon/pinterest.svg" alt="pinterest"></a></li>
-                    <li><a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a></li>
-                </ul>   
-            </div>
+      </div>
+      <div class="free-box">
+        <div class="rating">
+          <div class="rating__group rating__caption rating__title">
+            <input class="rating__star" type="radio" name="fail" id="5">
+            <label class="label-rating" for="5"></label>
+            <input class="rating__star" type="radio" name="satisfactory" id="4">
+            <label class="label-rating" for="4"></label>
+            <input class="rating__star" type="radio" name="good" id="3">
+            <label class="label-rating" for="3"></label>
+            <input class="rating__star" type="radio" name="verygood" id="2">
+            <label class="label-rating" for="2"></label>
+            <input class="rating__star" type="radio" name="excellent" id="1">
+            <label class="label-rating rating-5" for="1"></label>
+            Company Rating
+          </div>  
         </div>
-        <div>
-            <fieldset>
-                <legend>Company Rating</legend> 
-                <input type="radio" name="fail" id="1">
-                <input type="radio" name="satisfactory" id="2">
-                <input type="radio" name="good" id="3">
-                <input type="radio" name="verygood" id="4">
-                <input type="radio" name="excellent" id="5">
-            </fieldset>
-        </div>
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <p>Web Design — Direct Line Development</p>
-    </footer>
+        <p class="rating__caption">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a class="rating__caption rating__caption-web" href="#">Web Design — Direct Line Development</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

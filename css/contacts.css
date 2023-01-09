@@ -1,3 +1,7 @@
+.contact__box {
+    margin-bottom: 60px;
+}
+
 .contact {
     margin-top: 60px;
 }
@@ -86,7 +90,7 @@
 .checkbox {
     display: flex;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -97,7 +101,7 @@
 }
 
 .checkbox__text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -138,7 +142,6 @@
 .checkbox__input:disabled + .checkbox__text::before {
     content: "";
     background-image: url("../img/icon/square-disabled.svg");
-
 }
 
 .checkbox__input:disabled + .checkbox__text {
