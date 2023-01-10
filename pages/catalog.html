@@ -4,98 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Catalog</title>
 </head>
 <body>
-<header class="header">
-    <a href="/" class="header__link">
-        <img src="./img/icon/Logo.svg" alt="logo" class="header__logo"></a>
-    <nav class="header__nav">
-        <ul class="header__list">
-            <li class="header__list-item"><a href="#" class="header__list-link">Blog</a></li>
-            <li class="header__list-item"><a href="#" class="header__list-link">Catalog</a></li>
-            <li class="header__list-item"><a href="#" class="header__list-link">About Us</a></li>
-        </ul>
-        <ul class="header__list header-search">
-                <li class="header__list-item header-search"><a href="#" class="header__list header-link"><img src="./img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
-                <li class="header__list-item header-search"><a href="#" class="header__list header-link">Contact Us</a></li>
-        </ul>
+  <header class="header container">
+    <a href="/" class="header__link header-change">
+      <img src="../img/icon/Logo.svg" alt="logo" class="header__logo"></a>
+    <nav class="header__nav left">
+      <ul class="header__list">
+        <li class="header__list-item undotted header-change"><a href="../pages/blog.html" class="header__list-link">BLOG</a></li>
+        <li class="header__list-item undotted header-change"><a href="../pages/catalog.html" class="header__list-link">CATALOG</a></li>
+        <li class="header__list-item undotted header-change"><a href="#" class="header__list-link">ABOUT US</a></li>
+      </ul>
     </nav>
-</header>
-<main>
-    <section>
-        <div>
-            <h1>CATEGORY PRODUCTS</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><img src="./img/icon/vector.svg" alt="vector">
-                <li><a href="#">Catalog</a></li>
-            </ul>
-        </div> 
-        <div>
-            <ul>
-                <li><img src="./img/categoryOne.png" alt="categories" width="244" height="177"><a href="#">APPAREL KIDS</a></li>
-                <li><img src="./img/categoryTwo.png" alt="categories" width="208" height="244"><a href="#">HOLIDAY SHOP</a></li>
-                <li><img src="./img/categoryThree.png" alt="categories" width="270" height="270"><a href="#">TOYS</a></li>
-                <li><img src="./img/categoryFour.png" alt="categories" width="240" height="250"><a href="#">ACCESSORIES</a></li>
-                <li><img src="./img/categoryFive.png" alt="categories" width="248" height="248"><a href="#">SALE</a></li>
-                <li><img src="./img/categorySix.png" alt="categories" width="271" height="204"><a href="#">APPAREL ADULTS</a></li>
-            </ul>
-        </div>
+    <ul class="header__list header-search">
+      <li class="header__list-item header-search undotted header-change"><a href="#" class="header__list header-link"><img src="../img/icon/search.svg" alt="search" class="header__list header-link-search"></a></li>
+      <li class="header__list-item header-search undotted header-change"><a href="../pages/contact.html" class="header__list-search">CONTACT US</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="categories__box container">
+      <div class="categories">
+        <h1 class="title">CATEGORY PRODUCTS</h1>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="#">Home</a></li>
+          <li class="breadcrumbs__list-item undotted"><a class="breadcrumbs__link" href="#">Catalog</a></li>
+        </ul>
+      </div> 
+      <div class="products">
+        <ul class="product__list">
+          <li class="product__list-item product__apparel undotted"><a class="product__link product__link-apparel" href="#">APPAREL KIDS</a></li>
+          <li class="product__list-item product__holiday undotted"><a class="product__link product__link-holiday" href="#">HOLIDAY SHOP</a></li>          
+          <li class="product__list-item product__toys undotted"><a class="product__link product__link-toys"  href="../pages/toys.html">TOYS</a></li>
+          <li class="products-hidden-1"></li>
+          <li class="products-hidden-2"></li>  
+          <li class="product__list-item product__accessories undotted"><a class="product__link product__link-accessories"  href="#">ACCESSORIES</a></li>
+          <li class="product__list-item product__sale undotted"><a class="product__link product__link-sale"  href="#">SALE</a></li>
+          <li class="product__list-item product__adults undotted"><a class="product__link product__link-adults" href="#">APPAREL ADULTS</a></li>
+        </ul>
+      </div>
     </section>
-    <section>
-        <h2>PRODUCT DESCRIPTION</h2>
-        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    <section class="description container">
+      <h2 class="title description__title">PRODUCT DESCRIPTION</h2>
+      <p class="text__decorative description__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+      <p class="text__decorative description__text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+      <p class="text__decorative description__text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
     </section> 
-</main>
-<footer>
-    <div>
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Design Services</a></li>
-            <li><a href="#">Featured On</a></li>
-            <li><a href="#">2018 Holiday Catalog</a></li>
-            <li><a href="#">Shop By Designer</a></li>
+  </main>
+  <footer class="footer">
+    <div class="footer__box container">
+      <div class="footer__navigation">
+        <h2 class="link__name">Navigation</h2>
+        <ul class="navigation__list">
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">About Us</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="../pages/blog.html">Blog</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Design Services</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Featured On</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">2018 Holiday Catalog</a></li>
+          <li class="navigation__list-item undotted"><a class="navigation__link footer__link" href="#">Shop By Designer</a></li>
         </ul>
-    </div>
-    <div>
-        <h2>Customer Information</h2>
-        <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Sale Exclusions</a></li>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Search</a></li>
+      </div>
+      <div class="footer__information">
+        <h2 class="link__name information__name">Customer Information</h2>
+        <ul class="information__list">
+          <li class="undotted"><a class="footer__link" href="../pages/contact.html">Contact Us</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Sale Exclusions</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Shipping & Returns</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Terms & Conditions</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Privacy Policy</a></li>
+          <li class="undotted"><a class="footer__link" href="#">Search</a></li>
         </ul>
+      </div>
+      <div class="footer__connect">
+        <h2 class="link__name connect__name">Connect</h2>
+          <div class="connect__wrapper">
+            <input class="connect__email" type="text" name="text" placeholder="Email">
+            <button class="caption__info" type="button">JOIN</button>
+          </div>
+          <div class="media-icons">
+            <ul class="media-icons__list">
+              <li class="undotted"><a class="media-icons__link" href="https://www.facebook.com"><img class="media-icons__img" src="../img/icon/facebook.svg" alt="facebook"></a></li>
+              <li class="undotted"><a class="media-icons__link" href="https://www.twitterinc.com"><img class="media-icons__img" src="../img/icon/twitter.svg" alt="twitter"></a></li>
+              <li class="undotted"><a class="media-icons__link" href="https://ru.pinterest.com"><img class="media-icons__img" src="../img/icon/pinterest.svg" alt="pinterest"></a></li>
+              <li class="undotted"><a class="media-icons__link" href="https://www.instagram.com"><img class="media-icons__img" src="../img/icon/instagram.svg" alt="instagram"></a></li>
+            </ul>   
+          </div>
+      </div>
+      <div class="free-box">
+        <div class="rating">
+          <div class="rating__group rating__caption rating__title">
+            <input class="rating__star" type="radio" name="fail" id="5">
+            <label class="label-rating" for="5"></label>
+            <input class="rating__star" type="radio" name="satisfactory" id="4">
+            <label class="label-rating" for="4"></label>
+            <input class="rating__star" type="radio" name="good" id="3">
+            <label class="label-rating" for="3"></label>
+            <input class="rating__star" type="radio" name="verygood" id="2">
+            <label class="label-rating" for="2"></label>
+            <input class="rating__star" type="radio" name="excellent" id="1">
+            <label class="label-rating rating-5" for="1"></label>
+            Company Rating
+          </div>  
+        </div>
+        <p class="rating__caption">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a class="rating__caption rating__caption-web" href="#">Web Design — Direct Line Development</a>
+      </div>
     </div>
-    <div>
-        <h2>Connect</h2>
-        <input type="text" name="text" placeholder="Email">
-        <button type="button">join</button>
-        <ul>
-            <li><a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a></li>
-            <li><a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a></li>
-            <li><a href="#"><img src="./img/icon/pinterest.svg" alt="pinterest"></a></li>
-            <li><a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a></li>
-        </ul>
-    </div>
-    <div>
-        <fieldset>
-            <legend>Company Rating</legend>
-            <input type="radio" name="rating" id="1">
-            <input type="radio" name="rating" id="2">
-            <input type="radio" name="rating" id="3">
-            <input type="radio" name="rating" id="4">
-            <input type="radio" name="rating" id="5">
-        </fieldset>
-    </div>
-    <p>Copyright © 2018 Dlk • Design Life Kids</p>
-    <p>Web Design — Direct Line Development</p>
-</footer>
+  </footer>
 </body>
 </html>
