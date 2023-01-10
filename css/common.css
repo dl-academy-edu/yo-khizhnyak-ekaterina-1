@@ -31,6 +31,12 @@ ul li {
     list-style-type: none;
 }
 
+.title-hidden {
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+}
+
 /* стилизация breadcrumbs */
 
 .breadcrumbs__list {
@@ -187,11 +193,11 @@ ul li {
 .label__wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .contact__label {
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -219,9 +225,6 @@ ul li {
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
-    padding-left: 20px;
-    padding-top: 13px;
-    padding-bottom: 11px;
 }
 
 .contact__area {
@@ -235,7 +238,7 @@ ul li {
 .checkbox {
     display: flex;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     margin-top: 20px;
 }
 
@@ -246,7 +249,7 @@ ul li {
 }
 
 .checkbox__text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -260,7 +263,8 @@ ul li {
     content: "";
     background-image: url('../img/icon/square.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    top: -4px;
+    left: 35px;
     background-size: cover;
     cursor: pointer;
     width: 19px;
